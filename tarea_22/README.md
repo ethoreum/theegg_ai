@@ -36,7 +36,7 @@ El input lo daremos como fichero ``.csv`` de 3 columas: nombre (Name), peso (Wei
 
 # Notas para el evaluador
 
-En el fichero [tarea_22.py](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/tarea_22.ipynb) se pueden encontrar el planteamiento del problema y las soluciones 
+En el fichero [tarea_22.ipynb](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/tarea_22.ipynb) se pueden encontrar el planteamiento del problema y las soluciones 
 planteadas explicadas con detalle.
 
 Si hubiera algún problema para ejecutar alguno de los programas me puedes encontrar como DiegoLasa en la plataforma de la escuela o en [mailto](mailto:dilasgoi@protonmail.com).
