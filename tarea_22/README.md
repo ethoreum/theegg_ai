@@ -24,7 +24,7 @@ leche, observando el límite de peso del camión.
 
 # Observaciones
 
-El input lo daremos como fichero csv de 3 columas: nombre (Name), peso (Weight) y producción de leche (Production) y lo convertiremos a DataFrame con Pandas.
+El input lo daremos como fichero ``.csv`` de 3 columas: nombre (Name), peso (Weight) y producción de leche (Production) y lo convertiremos a DataFrame con Pandas.
 
 # Soluciones propuestas
 
@@ -33,46 +33,14 @@ El input lo daremos como fichero csv de 3 columas: nombre (Name), peso (Weight) 
 | tarea_22_brute_force.py | Python   | Probamos todas las combinaciones.              |
 | tarea_22_smart_search.py        | Python   | Descartamos las que ya sabemos que se pasan de peso y no las calculamos.
 
-## Propuesta por fuerza bruta (tarea_22_brute_force.py)
 
-* Vamos a definir todas las combinaciones en forma de lista binaria. Por ejemplo, si tenemos 3 vacas la combinaciones son las siguientes:
+# Notas para el evaluador
 
-- [0,0,0]
-- [0,0,1]
-- [0,1,0]
-- [0,1,1]
-- [1,0,0]
-- [1,0,0]
-- [1,1,0]
-- [1,1,1]
+En el fichero [tarea_22.py](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/tarea_22.ipynb) se pueden encontrar el planteamiento del problema y las soluciones 
+planteadas explicadas con detalle.
 
-El numero total de combinaciones para *n* vacas sería el número mas grande que se puede representar con *n* bits y el 0. Para el caso de 3 el número más grande representable con 3 bits es el 7 (111). A este le sumamos el 0 (000) y las combinaciones
-son 8 como las que mostramos. Vamos, que si no me fallan las cuentas, dadas *n* vacas el total de posibilidades es:
+Si hubiera algún problema para ejecutar alguno de los programas me puedes encontrar como DiegoLasa en la plataforma de la escuela o en [mailto](mailto:dilasgoi@protonmail.com).
 
-<img src="https://render.githubusercontent.com/render/math?math=2^{n}">
-
-
-* Después calcularemos el peso total y la producción total para cada una de las combinaciones y añadiremos a una lista todas aquellas que tengan un peso menor a un peso máximo dado (en nuestro caso 600 kilos). Calcularemos el máximo de esa lista en
-  base a la producción y aplicaremos la máscara binaria a la lista de nombres de vaca con el fin de obtener el listado de las vacas que vamos a comprar.
-
-### Requisitos
-
-Requiere tener *pandas* y Python 3 instalado. Si el evaluador no tuviera la posibilidad de usar Pandas se podría modificar el código para generar las listas a mano o podría poner una VM en la nube
-para que el evaluador pudiera ejecutar el código.
-
-
-## Propuesta sin probar todas las combinaciones (tarea_22_smart_search.py)
-
-Desde el punto de vista de la eficiencia no tiene sentido probar **todas** las combinaciones. Podemos ordenar las vacas de la más pesada a la menos pesada e ir metiendo vacas mientras no sobrepasemos el peso máximo (600 kilos). Por ejemplo:
-
-weights = [202, 201, 200, 150, 203]
-
-* Metemos la primera vaca: [1,0,0,0,0]. Peso total: 202
-* Metemos la segunda vaca: [1,1,0,0,0]. Peso total: 403
-* Metemos la tercera vaca: [1,1,1,0,0]. Peso total: 603 (PESO SOBREPASADO)
-
-Llegados a este punto no tendría sentido considerar [1,1,1,1,0] o [1,1,1,1,1,], ¿Por qué calcularlas entonces?
-
-## Links de interés
+# Links de interés
 
 * [Reto](http://www.nachocabanes.com/retos/reto.php?n=07)
