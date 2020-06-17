@@ -7,13 +7,13 @@ def generate_all_combinations(total_number_of_cows):
     combinations = list(itertools.product([0, 1], repeat=total_number_of_cows))
     return combinations
 
-def get_allowed_combinations(combinations, weights, production):
+def get_allowed_combinations(combinations, weights, production, max_weight):
     """Esta función devuelve aquellas combinaciones que cumplen con el criterio de peso"""
     full_info_list=[]
     for combination in combinations:
         total_weight_per_combination = sum([bit * weights for bit, weights in zip(list(combination), weights)])
         total_production_per_combination = sum([bit * production for bit, production in zip(list(combination), production)])
-        if total_weight_per_combination <= 600:
+        if total_weight_per_combination <= max_weight:
             full_info_list.append([combination, total_weight_per_combination, total_production_per_combination])
     return full_info_list
 
@@ -29,7 +29,7 @@ def main():
 
     # Generar todas las combinaciones y conseguir aquellas que cumplen el criterio de peso
     combinations = generate_all_combinations(total_number_of_cows)
-    allowed_combinations = get_allowed_combinations(combinations, weights, production)
+    allowed_combinations = get_allowed_combinations(combinations, weights, production, max_weight)
 
     # Ordenamos allowed_combinations por el tercer elemento (Production) de cada elemento de la lista
     # y calculamos la que maximiza el el tercer elemento (Production). 
