@@ -8,6 +8,7 @@ def generate_all_combinations(total_number_of_cows):
     return combinations
 
 def get_allowed_combinations(combinations, weights, production):
+    """Esta función devuelve aquellas combinaciones que cumplen con el criterio de peso"""
     full_info_list=[]
     for combination in combinations:
         total_weight_per_combination = sum([bit * weights for bit, weights in zip(list(combination), weights)])
