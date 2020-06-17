@@ -33,8 +33,7 @@ def main():
 
     # Ordenamos allowed_combinations por el tercer elemento (Production) de cada elemento de la lista
     # y calculamos la que maximiza el el tercer elemento (Production). 
-    max_combination = max(sorted(allowed_combinations, key = lambda x: int(x[2])), key = lambda x: int(x[2]))
-    
+    max_combination = max(allowed_combinations, key = lambda x: int(x[2])) 
     # Imprimimos la producción máxima esperada
     print("Producción máxima:", max_combination[2])
 
