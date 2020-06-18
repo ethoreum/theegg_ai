@@ -21,7 +21,7 @@ def main():
     # Definimos un DataFrame con a información de las vacas del csv
     cow_df = pandas.read_csv('cows.csv')
 
-    total_number_of_cows = len(cow_df.index) - 1
+    total_number_of_cows = len(cow_df.index)
     cows = cow_df.Name.tolist()
     weights = cow_df.Weight.tolist()
     production = cow_df.Production.tolist()
