@@ -24,6 +24,15 @@ Es un proyecto de software y hardware libre que fabrica placas de desarrollo con
 
 Los procesadores son de arquitectura ARM actualmente, pero eran AVR en sus inicios.
 
+## Arquitectura cliente-servidor
+
+Consiste en, básicamente, una arquitectura en la que un cliente (el que hace peticiones) realiza peticiones a un sistema que responde a dichas peticiones (servidor).
+
+Ejemplo:
+
+- cliente(s) solicita(n) valores de una tabla de una base de datos. Existe por tanto un servidor que procesa la petición y envía la información solicitada al cliente.
+- cliente(s) solicita(n) una página web. Existe por tanto un servidor web que procesa la petición y devuelve la página web.
+
 ## Arquitectura Von Neumann
 
 Se trata de arquitectura de computadoras ideada por por el matemático y físico John von Neumann. 
@@ -60,6 +69,14 @@ Es un lenguaje utilizado para dotar de estilos a los elementos propios del lengu
 
 ## Diagrama de flujo
 
+## DNS
+
+Del inglés Domain Name System. Es un sistema descentralizado que permite traducir los nombres de las páginas web (URL) a direcciones IP.
+
+Cada una de las máquinas que forman el sistema se denomina servidor DNS.
+
+También podemos tener servidores DNS locales para poder traducir hostnames y URLs en nuestra propia red.
+
 ## Editor de código
 
 Programa que permite la creación/edición de programas utilizando un lenguaje de programación. Dependiendo de lo complejos que sean o los plug-ins que tengan instalados tienen más o menos funcionalidades que pueden asistir al programador: navegador de archivos, resaltado de sintaxis, integración con control de versiones, integración con el compilador, etc.
@@ -68,6 +85,10 @@ Sólo existen dos que merezcan la pena en el mundo y los demás son innecesarios
 
 * Vim
 * Emacs
+
+## FTP
+
+Se trata de un protocolo de red para el intercambio de ficheros entre un cliente y un servidor. Existe una variante segura que utiliza el protocolo SSH y que cifra las comunicaciones denominado sFTP.
 
 ## Hardware
 
@@ -95,6 +116,17 @@ Inteligencia emergente de una máquina que es elevada al nivel de la humana.
 ## Intérprete
 
 Un intérprete es un programa que analiza y ejecuta simultáneamente un programa escrito en un lenguaje fuente. Esto es cómodo, y que no hay necesidad de compilar el código fuente, pero la contrapartida es que los lenguajes interpretados son, generalmente, más lentos que los compilados.
+
+## IP
+
+Una dirección IP (Internet Protocol address) es un código númerico que se utiliza para identificar equipos que están conectados a una red.
+
+Existen actualmente dos protolocos:
+
+- IPv4: donde las direcciones vienen dadas por 4 bytes: byte1.byte2.byte3.byte4. Un ejemplo en representación decimal: 192.168.2.3
+
+- IPv6: debido a que el número de IPs codificadas por IPv4 se está agotando, se crea este protocolo. Aquí las direcciones pasan a tener 128 bits (por los 32 del protocolo IPv4). Ejemplo de dirección IP en IPv6: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
 
 ## Java
 
@@ -173,6 +205,12 @@ Dispositivos de entrada y salida con los que interacturar con las componentes in
 
 Ciencia y arte de interactuar con un computador a través de un lenguaje que abstrae el lenguaje máquina.
 
+## Protocolo TCP/IP
+
+En inglés Internet protocol o IP, es un protocolo de comunicación de datos al nivel de red.
+
+TCP/IP es un estándar de red que define las reglas para el intercambio de datos entre dispositivos de red y le permite acceder a Internet cada vez que necesita enviar un mensaje o recibir información de otro dispositivo. 
+
 ## Puertas lógicas
 
 Dispositivo electrónico que opera sobre un conjunto de entradas binarias. Pueden usarse para definir funciones booleanas o sumadores. Las funciones booleanas más usuales son:
@@ -200,6 +238,16 @@ R es un lenguaje de programación de alto nivel, interpretado, gratuito y abiert
 ## Raspberry Pi
 
 Pequeño computador de precio asequible con procesador de arquitectura ARM para pequeños proyectos.
+
+## Servidor web
+
+Un servidor web se trata de una capa de software (y el hardware) que puede responder peticiones en la web. Un servidor web es capaz de procesar peticiones de red sobre el protocolo HTTP, HTTPS, FTP, IPsec, etc.
+
+Los servidores web más usados son:
+
+- Apache
+- Nginx
+- Tomcat
 
 ## Sistema operativo
 
