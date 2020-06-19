@@ -18,6 +18,14 @@ británico la capacidad de localizar a los submarinos alemanes.
 
 Secuencia de pasos o tareas destinadas a llevar a cabo una función específica.
 
+## API 
+
+La API (**A**pplication **P**rogramming **I**nterface) se trata de una especie de reglas de traducción para poder interactuar con un servicio ya creado; una especie de intermediario de alto nivel. De este modo, haciendo llamadas a la API, podemos interactuar con ese servicio sin tener que saber demasiado de cómo está desarrollado.
+
+El número de llamadas a la API que podemos hacer está limitado por el proveedor del servicio y dado un número muy grande de llamadas podemos tener que pasar por caja.
+
+Las APIs también pueden ser utilizadas por servicios para intercambiar información entre sí.
+
 ## Arduino
 
 Es un proyecto de software y hardware libre que fabrica placas de desarrollo con finalidad educativa.
@@ -127,7 +135,6 @@ Existen actualmente dos protolocos:
 
 - IPv6: debido a que el número de IPs codificadas por IPv4 se está agotando, se crea este protocolo. Aquí las direcciones pasan a tener 128 bits (por los 32 del protocolo IPv4). Ejemplo de dirección IP en IPv6: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
 
-
 ## Java
 
 Es una lenguaje de programación de alto nivel y orientado a objetivos. 
@@ -144,6 +151,51 @@ Es un lenguaje de programación interpretado utilizado en la parte del cliente p
   console.log("Hello world!");
   ```
 </details>
+
+## JSON
+
+JSON (**J**avaScript **O**bject **No**tation) es un formato de texto sencillo para el intercambio de datos. Ejemplo de JSON:
+```
+{
+    "menu": {
+        "id": "file",
+        "value": "File",
+        "popup": {
+            "menuitems": [
+                {
+                    "value": "New", "onclick": "CreateNewDoc()"
+                },{
+                    "value": "Open", "onclick": "OpenDoc()"
+                },{
+                    "value": "Close", "onclick": "CloseDoc()"
+                }
+            ]
+        }
+    }
+}
+```
+
+Ejemplo que usamos en el programa de proceso de logs:
+```
+[
+    {
+        "job identifier": "12334",
+        "username": "dilasgoi",
+        "group": "scicomp",
+        "queue": "p-slow-small",
+        "qtime": "1473500781",
+        "start": "1473506777",
+        "end": "1473703916",
+        "Resource_List.cput": "720000",
+        "Resource_List.mem": "1",
+        "total_execution_slots": "1",
+        "unique_node_count": "1",
+        "Exit_status": "0",
+        "resources_used.mem": "379804kb",
+        "resources_used.walltime": "23342"
+    }
+]
+```
 
 ## Lenguaje de programación
 
@@ -204,6 +256,12 @@ Dispositivos de entrada y salida con los que interacturar con las componentes in
 ## Programación
 
 Ciencia y arte de interactuar con un computador a través de un lenguaje que abstrae el lenguaje máquina.
+
+## Protocolo de comunicación
+
+Conjunto de normas que tienen que cumplir dos interlocutores para poder entenderse. 
+
+Estas reglas se definen a nivel de la sintaxis, la semántica, sincronización de la comunicación así como de la reduncancia de los mensajes y la corrección de errores.
 
 ## Protocolo TCP/IP
 
@@ -273,4 +331,10 @@ Elemento de circuitería digital que permite el paso de corriente o no en funci�
 
 En los procesadores modernos sirve para construir puertas lógicas que a su vez se utilizan para construir circuitería digital.
 
+## XML
 
+XML significa e**X**tensible **Ma**rkup **L**anguage.
+
+Se trata de un lenguaje de marcas utilizado para almacenar datos en forma legible. Surgió debido a la necesidad de almacenar grandes cantidades de información, por lo que es muy común que sea utilizado en hojas de cálculo, bases de datos, editores de texto, etc.
+
+Al contrario del HTML permite crear marcas propias para describir el contenido, creando un conjunto de símbolos ilimitado y autodefinido (de ahí Extensible).
