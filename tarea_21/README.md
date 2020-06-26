@@ -24,6 +24,7 @@ El número 10000 será siempre nuestro denominador, por lo tanto tiene sentido u
 | tarea_21_numpy_gcd.py | Python   | Halla el máximo común divisor con la función gcd de ``numpy``.                      | 
 | tarea_21_simple.py    | Python   | Damos los factores primos de 10000 como conocidos                                   | 
 | tarea_21.jl           | Julia    | Calculamos los factores de 10000 y reducimos *abcd* todo lo que se pueda con ellos. |
+| tarea_21_gcd.jl       | Julia    | Halla el máximo común divisor con la función gcd de Julia.                          |
 
 # Ejecución de los programas
 
@@ -59,5 +60,11 @@ Para ejecutar los programas en Julia es necesario disponer del REPL de Julia (in
 ### tarea_21.jl
 ```
 julia tarea_21.jl 0.2340
+117/500
+```
+
+### tarea_21_gcd.jl
+```
+julia tarea_21_gcd.jl 0.2340
 117/500
 ```
