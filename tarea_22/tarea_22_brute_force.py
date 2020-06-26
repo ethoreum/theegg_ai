@@ -1,5 +1,6 @@
 import itertools
 import pandas
+import sys
 
 def generate_all_combinations(total_number_of_cows):
     """Esta función devuelve en forma de lista binaria todas las combinaciones
@@ -19,13 +20,13 @@ def get_allowed_combinations(combinations, weights, production, max_weight):
 
 def main():
     # Definimos un DataFrame con a información de las vacas del csv
-    cow_df = pandas.read_csv('cows.csv')
+    cow_df = pandas.read_csv(sys.argv[1])
 
     total_number_of_cows = len(cow_df.index)
     cows = cow_df.Name.tolist()
     weights = cow_df.Weight.tolist()
     production = cow_df.Production.tolist()
-    max_weight = 600
+    max_weight = int(sys.argv[2])
 
     # Generar todas las combinaciones y conseguir aquellas que cumplen el criterio de peso
     combinations = generate_all_combinations(total_number_of_cows)

@@ -28,10 +28,10 @@ El input lo daremos como fichero ``.csv`` de 3 columas: nombre (Name), peso (Wei
 
 # Soluciones propuestas
 
-| Programa           | Lenguaje | Observaciones                                                                      |
-|--------------------|----------|------------------------------------------------------------------------------------|
-| tarea_22_brute_force.py | Python   | Probamos todas las combinaciones.              |
-| tarea_22_smart_search.py        | Python   | Descartamos las que ya sabemos que se pasan de peso y no las calculamos.
+| Prog     rama            | Lenguaje | Observaciones                                                                      |
+|--------------------------|----------|------------------------------------------------------------------------------------|
+| tarea_22_brute_force.py  | Python   | Probamos todas las combinaciones.                                                  |
+| tarea_22_smart_search.py | Python   | Descartamos las que ya sabemos que se pasan de peso y no las calculamos.           |
 
 
 # Notas para el evaluador
@@ -40,6 +40,31 @@ En el fichero [tarea_22.ipynb](https://github.com/ethoreum/theegg_ai/blob/master
 planteadas explicadas con detalle.
 
 Si hubiera algún problema para ejecutar alguno de los programas me puedes encontrar como DiegoLasa en la plataforma de la escuela o en [mailto](mailto:dilasgoi@protonmail.com).
+
+# Ejecución de los programas
+
+## Programas en Python
+
+### tarea_22_brute_force.py
+
+Habría que dar dos argumentos de línea de comandos:
+
+* **Argumento 1**: fichero ``csv`` con los datos de entrada.
+* **Argumenti 2**: peso máximo permitido por el camión.
+
+```
+python tarea_22_brute_force.py cows.csv 600
+Producción máxima: 92
+Peso de la combinación: 570
+Listado de vacas que deberíamos comprar: ['Flora', 'Miguelita']
+```
+
+```
+python tarea_22_brute_force.py cows.csv 6000
+Producción máxima: 244
+Peso de la combinación: 1900
+Listado de vacas que deberíamos comprar: ['Jacinta', 'Bernarda', 'Margarita', 'Flora', 'Miguelita', 'Fulgencia']
+```
 
 # Links de interés
 
