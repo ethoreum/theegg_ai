@@ -22,6 +22,7 @@ El número 10000 será siempre nuestro denominador, por lo tanto tiene sentido u
 |-----------------------|----------|-------------------------------------------------------------------------------------|
 | tarea_21.py           | Python   | Calculamos los factores de 10000 y reducimos *abcd* todo lo que se pueda con ellos. |
 | tarea_21_numpy_gcd.py | Python   | Halla el máximo común divisor con la función gcd de ``numpy``.                      | 
+| tarea_21_simple.py    | Python   | Damos los factores primos de 10000 como conocidos                                   | 
 | tarea_21.jl           | Julia    | Calculamos los factores de 10000 y reducimos *abcd* todo lo que se pueda con ellos. |
 
 # Ejecución de los programas
@@ -40,6 +41,12 @@ Para ejecutar este fichero habría que disponer de ``numpy``.
  
 ```
 python tarea_21_ultra_simple.py 0.2340
+117 / 500
+```
+
+### tarea_21_simple.py
+```
+python tarea_21.py 0.2340
 117 / 500
 ```
 
