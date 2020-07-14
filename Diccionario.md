@@ -51,6 +51,10 @@ Está formado por una CPU que a su vez contiene una ALU (Arithmetic Logic Unit),
 
 Se diferencia de la Von Neumann principalmente por la división de las instrucciones de los datos que se comunican con la unidad central de proceso en dos espacis de memoria separados.
 
+## Bucles
+
+Se trata de un conjunto de instrucciones que se repite hasta que una situación es satisfecha. Pueden ser de tipo ``while`` o de tipo ``for``, por ejemplo.
+
 ## Criptografía
 
 La ciencia y el arte de esconder información.
@@ -84,6 +88,8 @@ Son servicios web que permiten almacenar tu proyecto y aplicarle control de vers
 Es un lenguaje utilizado para dotar de estilos a los elementos propios del lenguaje HTML. Por ejemplo: definir fuentes y sus tamaños, color o posición del elemento.
 
 ## Diagrama de flujo
+
+Un diagrama de flujo es un tipo de diagrama que nos permite visualizar, con la ayuda de cajas de diferentes formas y flechas, los pasos que sigue un proceso (un algoritmo, por ejemplo). 
 
 ## DNS
 
