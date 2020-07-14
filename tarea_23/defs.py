@@ -3,12 +3,12 @@ import sys
 import re
 
 def normalize_input(text):
-    """Esta funcion elimina espacios en blanco, los caracteres
+    """Elimina espacios en blanco, los caracteres
     ,.:;¿?¡! y convierte minusculas en mayusculas"""
     return re.sub('[.,:;¿?¡! ]', '', text).upper()
 
 def generate_shuffled_deck():
-    """Esta función genera una baraja mezclada. Las
+    """Genera una baraja mezclada. Las
     cartas están así representadas:
     1-13  : Clubs
     14-26 : Diamonds
@@ -18,11 +18,11 @@ def generate_shuffled_deck():
     54    : B
     """
     deck = [item for item in range(1,55,1)]
-    #random.shuffle(deck)
+    random.shuffle(deck)
     return deck
 
 def move_1_card_down(deck, card):
-    """Esta función desplaza una carta hacia abajo"""
+    """Desplaza una carta hacia abajo"""
     index = deck.index(card)
     if index < 53:
         deck[index], deck[index + 1] = deck[index + 1], deck[index]
@@ -31,7 +31,7 @@ def move_1_card_down(deck, card):
     return deck
 
 def split_in_three(deck):
-    """Esta función corta en 3 trozos una baraja 
+    """Corta en 3 trozos una baraja 
     tomando los comodines como pivotes y reordena"""
     first_joker_index  = min(deck.index(53), deck.index(54))
     second_joker_index = max(deck.index(53), deck.index(54))
@@ -39,12 +39,15 @@ def split_in_three(deck):
     return deck[second_joker_index + 1:] + deck[first_joker_index:second_joker_index + 1] + deck[:first_joker_index]
     
 def final_cut(deck):
-    """ Corte final de la baraja"""
+    """Corte final de la baraja"""
     if deck[-1] is not 53 or deck[-1] is not 54:
         return deck[deck[-1]:-1] + deck[:deck[-1]] + [deck[-1]]
 
 def generate_keystream(input_text, deck):
+    """Genera la ristra a partir de la baraja de entrada"""
     keystream = []
+    # Hay que generar tantos elementos de ristra como caracteres hay
+    # en el texto de entrada
     while len(keystream) < len(input_text):
         deck = move_1_card_down(deck, 53)
         deck = move_1_card_down(deck,54)

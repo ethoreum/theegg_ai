@@ -29,15 +29,17 @@ tipo String.
 | Fichero | Lenguaje | Observaciones                                                                        |
 |---------|----------|--------------------------------------------------------------------------------------|
 | defs.py |  Python  | Contiene las funciones utilizadas en el main.                                        |
-|
+
 # Ejecución de los programas
 
 ## tarea_23_shuffled.py
 
 En estos ejemplos se ha empleado una baraja ordenada (1,2,3,...,52,53,54) para generar la clave. El primer argumento habría que darlo entre comillas simples para que todos los caracteres se interpreten de manera literal. Si sólo hubiera caracteres alfabéticos no sería necesario.
 
+### Cifrado
+
 ```
-python tarea_23_shuffled.py 'Bienvenidos al salvaje oeste.' cypher
+$ python tarea_23_shuffled.py 'Bienvenidos al salvaje oeste.' cypher
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
@@ -46,20 +48,23 @@ Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 El programa es capaz de eliminar los caracteres: ,.;:¡!?¿ y también admite mayúsculas y minusculas:
 
 ```
-python tarea_23_shuffled.py 'Bi,.,.,.,,envenidosalsalvajeoeste!!!!!!!!!' cypher
+$ python tarea_23_shuffled.py 'Bi,.,.,.,,envenidosalsalvajeoeste!!!!!!!!!' cypher
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 ```
 
+### Descifrado
+
 ```
-python tarea_23_shuffled.py 'FFOLDDFOHVMNEAQGQSHOODPSM' decypher
+$ python tarea_23_shuffled.py 'FFOLDDFOHVMNEAQGQSHOODPSM' decypher
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 ```
+
 ```
-python tarea_23_shuffled.py 'FFOLDDFOHVMN!!EAQGQ..;.;.;.SHOODPSM' decypher
+$ python tarea_23_shuffled.py 'FFOLDDFOHVMN!!EAQGQ..;.;.;.SHOODPSM' decypher
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
