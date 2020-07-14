@@ -16,6 +16,55 @@ tipo String.
 
 2. Una segunda función que recoja el mensaje cifrado y lo descifre utilizando este mismo algoritmo.
 
+
+# Soluciones propuestas 
+
+| Programa                 | Lenguaje | Observaciones                                                                        |
+|--------------------------|----------|--------------------------------------------------------------------------------------|
+| tarea_23_shuffled.py     | Python   | Clave generada con una baraja barajada aleatoriamente. Input como CLA\*.             |
+| tarea_23_shuffled_alt.py | Python   | Pide de manera interactiva el texto a descifrar o cifrar.                            |
+
+\* CLA: **C**ommand **L**ine **A**rgument (Argumento de Línea de Comandos).
+
+| Fichero | Lenguaje | Observaciones                                                                        |
+|---------|----------|--------------------------------------------------------------------------------------|
+| defs.py |  Python  | Contiene las funciones utilizadas en el main.                                        |
+|
+# Ejecución de los programas
+
+## tarea_23_shuffled.py
+
+En estos ejemplos se ha empleado una baraja ordenada (1,2,3,...,52,53,54) para generar la clave. El primer argumento habría que darlo entre comillas simples para que todos los caracteres se interpreten de manera literal. Si sólo hubiera caracteres alfabéticos no sería necesario.
+
+```
+python tarea_23_shuffled.py 'Bienvenidos al salvaje oeste.' cypher
+Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
+Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
+Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
+```
+
+El programa es capaz de eliminar los caracteres: ,.;:¡!?¿ y también admite mayúsculas y minusculas:
+
+```
+python tarea_23_shuffled.py 'Bi,.,.,.,,envenidosalsalvajeoeste!!!!!!!!!' cypher
+Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
+Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
+Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
+```
+
+```
+python tarea_23_shuffled.py 'FFOLDDFOHVMNEAQGQSHOODPSM' decypher
+Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
+Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
+Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
+```
+```
+python tarea_23_shuffled.py 'FFOLDDFOHVMN!!EAQGQ..;.;.;.SHOODPSM' decypher
+Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
+Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
+Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
+```
+
 # Links de interés
 
 * [Cifrado con el solitario](https://sindominio.net/biblioweb/telematica/solitario.html)

@@ -57,7 +57,15 @@ La ciencia y el arte de esconder información.
 
 ### Cifrado simétrico
 
+También conocido como "Cifrado de clave simétrica". Se trata de un método de cifrado que utiliza la misma clave para cifrar y descifrar.
+
+El problema de estos sistemas de cifrado es la compartición y distribución de las claves, ya que toda la seguridad del cifrado recae en esta.
+
 ### Cifrado asimétrico
+
+Es un método de cifrado que utiliza dos claves: una pública (la que se distribuye)  y una privada (que el propietario debe guardar celosamente).
+
+Cuando queremos cifrar un mensaje, utilizamos la clave pública del destinatario para hacerlo, ya que sólo la clave privada de este último puede descifrar el mensaje.qqqq
 
 ## Compilador
 
