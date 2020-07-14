@@ -39,7 +39,7 @@ En estos ejemplos se ha empleado una baraja ordenada (1,2,3,...,52,53,54) para g
 ### Cifrado
 
 ```
-$ python tarea_23_shuffled.py 'Bienvenidos al salvaje oeste.' cypher
+$ python tarea_23_shuffled.py 'Bienvenidos al salvaje oeste.' encrypt
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
@@ -48,7 +48,7 @@ Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 El programa es capaz de eliminar los caracteres: ,.;:¡!?¿ y también admite mayúsculas y minusculas:
 
 ```
-$ python tarea_23_shuffled.py 'Bi,.,.,.,,envenidosalsalvajeoeste!!!!!!!!!' cypher
+$ python tarea_23_shuffled.py 'Bi,.,.,.,,envenidosalsalvajeoeste!!!!!!!!!' encrypt
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
@@ -57,14 +57,14 @@ Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 ### Descifrado
 
 ```
-$ python tarea_23_shuffled.py 'FFOLDDFOHVMNEAQGQSHOODPSM' decypher
+$ python tarea_23_shuffled.py 'FFOLDDFOHVMNEAQGQSHOODPSM' decrypt
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
 ```
 
 ```
-$ python tarea_23_shuffled.py 'FFOLDDFOHVMN!!EAQGQ..;.;.;.SHOODPSM' decypher
+$ python tarea_23_shuffled.py 'FFOLDDFOHVMN!!EAQGQ..;.;.;.SHOODPSM' decrypt
 Texto cifrado   :  FFOLDDFOHVMNEAQGQSHOODPSM
 Clave de cifrado:  EXKYIZSGEHUNTIQVVSYKAZXZI
 Texto sin cifrar:  BIENVENIDOSALSALVAJEOESTE
