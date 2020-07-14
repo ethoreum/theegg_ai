@@ -51,6 +51,13 @@ Está formado por una CPU que a su vez contiene una ALU (Arithmetic Logic Unit),
 
 Se diferencia de la Von Neumann principalmente por la división de las instrucciones de los datos que se comunican con la unidad central de proceso en dos espacis de memoria separados.
 
+## Bases de datos
+
+Se trata de una colección de datos ordenada. En función del tipo de dato que almacenan las bases de datos pueden ser de muchos tipos (estáticos o dinámicos) y tener diferentes formatos (SQL, CSV).
+
+Del mismo modo, también atienden a modelos diferentes: jerarquicas (LDAP), relacionales (SQL), noSQL(MongoDB).
+
+
 ## Bucles
 
 Se trata de un conjunto de instrucciones que se repite hasta que una situación es satisfecha. Pueden ser de tipo ``while`` o de tipo ``for``, por ejemplo.
@@ -87,6 +94,19 @@ Son servicios web que permiten almacenar tu proyecto y aplicarle control de vers
 
 Es un lenguaje utilizado para dotar de estilos a los elementos propios del lenguaje HTML. Por ejemplo: definir fuentes y sus tamaños, color o posición del elemento.
 
+## Data processing
+
+Como su nombre indica se trata del procesado/manipulación de datos. Esto puede incluir:
+
+- Normalización (para ajustarlo a un formato requerido).
+- Ordenación.
+- Eliminación de entradas innecesarias.
+- Reconstrucción de datos faltantes.
+- Análisis.
+- Resumen.
+- CLasificación.
+
+
 ## Diagrama de flujo
 
 Un diagrama de flujo es un tipo de diagrama que nos permite visualizar, con la ayuda de cajas de diferentes formas y flechas, los pasos que sigue un proceso (un algoritmo, por ejemplo). 
@@ -107,6 +127,15 @@ Sólo existen dos que merezcan la pena en el mundo y los demás son innecesarios
 
 * Vim
 * Emacs
+
+## ETL
+
+- Extraer (Extract)
+- Transformar (Transform)
+- Cargar (Load)
+
+
+ETL es un proceso que extrae/adquiere información de diferentes fuentes, la trata/transforma + valida y finalmente la presenta de modo que pueda ser util.
 
 ## FTP
 
