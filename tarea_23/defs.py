@@ -50,8 +50,8 @@ def generate_keystream(input_text, deck):
     # en el texto de entrada
     while len(keystream) < len(input_text):
         deck = move_1_card_down(deck, 53)
-        deck = move_1_card_down(deck,54)
-        deck = move_1_card_down(deck,54)
+        deck = move_1_card_down(deck, 54)
+        deck = move_1_card_down(deck, 54)
         deck = split_in_three(deck)
         deck = final_cut(deck)
         if deck[0] < 54:
