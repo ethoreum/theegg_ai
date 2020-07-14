@@ -12,7 +12,7 @@ def main():
         print("Texto cifrado   : ", ''.join(cypher))
     elif sys.argv[2] == 'decrypt':
         plain_text = decrypt_text(keystream, input_text)
-        print("Texto cifrado   : ", ''.join(sys.argv[1])
+        print("Texto cifrado   : ", ''.join(sys.argv[1]))
         print("Clave de cifrado: ", keystream_to_char(keystream))
         print("Texto sin cifrar: ", ''.join(plain_text))
 main()
