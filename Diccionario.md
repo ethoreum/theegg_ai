@@ -285,6 +285,10 @@ La ley de Moore expresa que aproximadamente cada dos años se duplica el número
 
 Actualmente, debido a las dificultades para crear transistores más pequeños debido a el estancamiento en las tecnologías de miniaturización y a los efectos cuáticos que aparecen a estas escalas, la Ley de Moore no se está cumpliendo.
 
+## NoSQL
+
+El nombre de la base de datos NoSQL proviene de Not only SQL. Esto se debe a que este tipo de base de datos suele evitar el uso del SQL. El hecho de evitar el SQL es porque se usa para proyectos en los que se necesita trabajar en la base de datos con un gran volumen. En las bases de datos con lenguaje SQL, los distintos atributos de un elemento, están en diferentes columnas, mientras que en una NoSQL todos los atributos se encuentran en una misma columna, ahorrando espacio y ganando en rendimiento. Algunos ejemplos de lenguajes usados por bases de datos NoSQL son: JSON (JavaScript Object Notation); CQL (Contextual Query Language, anteriormente conocido como Common Query Language); o GQL (Graph Query Language). 
+
 ## Periféricos
 
 Dispositivos de entrada y salida con los que interacturar con las componentes internos de un computador. Por ejemplo:
