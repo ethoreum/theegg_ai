@@ -5,21 +5,21 @@ class Pokemon():
 
 def main():
     pikachu = Pokemon(55, 100)
-    jygglypuff = Pokemon(45, 100)
+    jigglypuff = Pokemon(45, 100)
     turn = 1
 
-    while pikachu.hp > 0 and jygglypuff.hp > 0:
+    while pikachu.hp > 0 and jigglypuff.hp > 0:
         if turn == 1:
-            jygglypuff.hp -= pikachu.attack
+            jigglypuff.hp -= pikachu.attack
             turn = 0
         else:
-            pikachu.hp -= jygglypuff.attack
+            pikachu.hp -= jigglypuff.attack
             turn = 1
 
-    if jygglypuff.hp <= 0:
+    if jigglypuff.hp <= 0:
         print("Pikachu Wins!")
     else:
-        print("Jygglypuff Wins!")
+        print("Jigglypuff Wins!")
 
 if __name__ == "__main__":
     main()
