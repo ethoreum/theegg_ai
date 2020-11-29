@@ -24,26 +24,25 @@ comenzando por el último cociente. Para este caso:
 
 <img src="https://render.githubusercontent.com/render/math?math=1000011">
 
-## Para números positivos y negativos
-
-### Complemento de unos
-
-### Complemento de dos
-
 # Soluciones propuestas
 
 | Programa           | Lenguaje | Observaciones                                                                      |
 |--------------------|----------|------------------------------------------------------------------------------------|
-| tarea_24_positivos.py | Python   | Obtenemos la representación binaria para números positivos únicamente               |
-| tarea_24_complemento_de_dos.py        | Python   | Obtenemos la representación binaria par números positivos y negativos hasta de 8 bits [-127,128].|
+| tarea_24.py | Python   | Obtenemos la representación binaria para números positivos únicamente               |
 | tarea_21_builtin_bin.py | Python | Obtenermos la representación binaria con la función *bin* de Python |
 
 # Ejecución de los programas
 
-## tarea_24.py
+## ``tarea_24.py``
 ```
 python tarea_24.py 8
-100
+1000
+```
+
+## ``tarea_21_builtin_bin.py```
+```
+python tarea_21_builtin_bin.py 8
+1000
 ```
 
 # Links de interés
