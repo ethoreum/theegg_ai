@@ -24,47 +24,44 @@ leche, observando el límite de peso del camión.
 
 # Observaciones
 
-El input lo daremos como fichero ``.csv`` de 3 columas: nombre (Name), peso (Weight) y producción de leche (Production) y lo convertiremos a DataFrame con Pandas.
+El input lo daremos como fichero ``.csv`` de 3 columas que se ubica en el directorio``data``: nombre (Name), peso (Weight) y producción de leche (Production) y lo convertiremos a DataFrame con Pandas.
 
 # Soluciones propuestas
 
-| Prog     rama            | Lenguaje | Observaciones                                                                      |
+| Programa                 | Lenguaje | Observaciones                                                                      |
 |--------------------------|----------|------------------------------------------------------------------------------------|
-| tarea_22_brute_force.py  | Python   | Probamos todas las combinaciones.                                                  |
-| tarea_22_smart_search.py | Python   | Descartamos las que ya sabemos que se pasan de peso y no las calculamos.           |
-
-
-# Notas para el evaluador
-
-En el fichero [tarea_22.ipynb](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/tarea_22.ipynb) se pueden encontrar el planteamiento del problema y las soluciones 
-planteadas explicadas con detalle.
-
-Si hubiera algún problema para ejecutar alguno de los programas me puedes encontrar como DiegoLasa en la plataforma de la escuela o en [mailto](mailto:dilasgoi@protonmail.com).
+| [brute_force.py](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/brute_force/brute_force.py)           | Python   | Probamos todas las combinaciones. [Documentación del programa](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/brute_force/brute_force.ipynb)                                                  |
+| [dynamic_programming.py](https://github.com/ethoreum/theegg_ai/blob/master/tarea_22/dynamic_programming/dynamic_programming.py)   | Python   | Utilizando programación dinámica.                                                  |
 
 # Ejecución de los programas
 
+Si hubiera algún problema para ejecutar alguno de los programas me puedes encontrar como DiegoLasa en la plataforma de la escuela o en [mailto](mailto:dilasgoi@protonmail.com).
+
 ## Programas en Python
 
-### tarea_22_brute_force.py
+### ``brute_force.py``
 
 Habría que dar dos argumentos de línea de comandos:
 
 * **Argumento 1**: fichero ``csv`` con los datos de entrada.
-* **Argumenti 2**: peso máximo permitido por el camión.
+* **Argumento 2**: peso máximo permitido por el camión.
 
 ```
-python tarea_22_brute_force.py cows.csv 600
+python brute_force.py cows.csv 600
 Producción máxima: 92
 Peso de la combinación: 570
 Listado de vacas que deberíamos comprar: ['Flora', 'Miguelita']
 ```
 
 ```
-python tarea_22_brute_force.py cows.csv 6000
+python brute_force.py cows.csv 6000
 Producción máxima: 244
 Peso de la combinación: 1900
 Listado de vacas que deberíamos comprar: ['Jacinta', 'Bernarda', 'Margarita', 'Flora', 'Miguelita', 'Fulgencia']
 ```
+
+### ``dynamic_programming.py``
+
 
 # Links de interés
 

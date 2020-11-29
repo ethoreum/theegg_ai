@@ -20,7 +20,7 @@ def get_allowed_combinations(combinations, weights, production, max_weight):
 
 def main():
     # Definimos un DataFrame con a información de las vacas del csv
-    cow_df = pandas.read_csv(sys.argv[1])
+    cow_df = pandas.read_csv('../data/' + sys.argv[1])
 
     total_number_of_cows = len(cow_df.index)
     cows = cow_df.Name.tolist()
