@@ -39,7 +39,7 @@ python tarea_24.py 8
 1000
 ```
 
-## ``tarea_21_builtin_bin.py```
+## ``tarea_21_builtin_bin.py``
 ```
 python tarea_21_builtin_bin.py 8
 1000
