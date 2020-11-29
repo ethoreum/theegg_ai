@@ -19,10 +19,9 @@ tipo String.
 
 # Soluciones propuestas 
 
-| Programa                 | Lenguaje | Observaciones                                                                        |
-|--------------------------|----------|--------------------------------------------------------------------------------------|
-| tarea_23_shuffled.py     | Python   | Clave generada con una baraja barajada aleatoriamente. Input como CLA\*.             |
-| tarea_23_shuffled_alt.py | Python   | Pide de manera interactiva el texto a descifrar o cifrar.                            |
+| Programa        | Lenguaje | Observaciones                                                                        |
+|-----------------|----------|--------------------------------------------------------------------------------------|
+| tarea_23.py     | Python   | Clave generada con una baraja barajada aleatoriamente. Input como CLA\*.             |
 
 \* CLA: **C**ommand **L**ine **A**rgument (Argumento de Línea de Comandos).
 
@@ -32,7 +31,25 @@ tipo String.
 
 # Ejecución de los programas
 
-## tarea_23_shuffled.py
+## ``tarea_23.py``
+
+Habría que aportar dos argumentos de línea de comandos de manera obligatoria:
+
+* Texto de entrada entre comillas simples.
+* Operación a realizar sobre el texto de entrada: "encrypt" o "decrypt"
+
+Se puede consultar la ayuda con un:
+```
+$ python tarea_23.py -h
+usage: tarea_23.py [-h] input_text operation
+
+positional arguments:
+  input_text  Texto de entrada entre comillas simples.
+  operation   Operación: puede ser "encrypt" o "decrypt".
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
 
 En estos ejemplos se ha empleado una baraja ordenada (1,2,3,...,52,53,54) para generar la clave. El primer argumento habría que darlo entre comillas simples para que todos los caracteres se interpreten de manera literal. Si sólo hubiera caracteres alfabéticos no sería necesario.
 
