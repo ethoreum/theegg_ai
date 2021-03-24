@@ -112,29 +112,27 @@ Son servicios web que permiten almacenar tu proyecto y aplicarle control de vers
 
 ## CPU
 
-Del inglés *Central Processing Unit*. Se trata del componente de un sistema informático que controla la interpretación y ejecución de las instrucciones. 
+Del inglés *Central Processing Unit*. Se trata del componente de un sistema informático que controla la interpretación y ejecución de las instrucciones. Se compone de:
 
-Se compone de:
-
-* Unidad de control (CU)
+### Unidad de control (CU)
 
 - Obtiene, descodifica y ejecuta instrucciones.
 - Emite señales de control para controlar el hardware mueve los datos por el sistema.
 
-* Unidad aritmética lógica (ALU)
+### Unidad aritmética lógica (ALU)
 
 - Realiza operaciones aritméticas y lógicas (decisiones). En la ALU se realizan los cálculos y se toman las decisiones.
 - Actúa como puerta de enlace entre la memoria primaria y el almacenamiento secundario. Los datos que se transfieren entre ellos pasan por la ALU.
 - La ALU realiza cálculos y toma decisiones lógicas.
 
-* Registros
+### Registros
 
 Los registros son pequeñas cantidades de memoria de alta velocidad contenidas en la CPU. El procesador los utiliza para almacenar pequeñas cantidades de datos que se necesitan durante el procesamiento, como por ejemplo
 
 - La dirección de la siguiente instrucción a ejecutar la instrucción actual que se está decodificando los resultados de los cálculos.
 - Los distintos procesadores tienen diferentes números de registros para diferentes propósitos, pero la mayoría tiene algunos, o todos, de los siguientes: contador de programa, registro de direcciones de memoria (MAR), registro de datos de memoria (MDR), registro de instrucción actual (CIR) y acumulador (ACC).
 
-* Caché
+### Caché
 
 La caché es una pequeña cantidad de memoria de acceso aleatorio (RAM) de alta velocidad construida directamente dentro del procesador. Se utiliza para almacenar temporalmente datos e instrucciones que el procesador puede reutilizar. Esto permite un procesamiento más rápido, ya que el procesador no tiene que esperar a que los datos y las instrucciones se obtengan de la RAM.
 
