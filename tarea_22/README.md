@@ -62,6 +62,28 @@ Listado de vacas que deberíamos comprar: ['Jacinta', 'Bernarda', 'Margarita', '
 
 ### ``dynamic_programming.py``
 
+Habría que dar dos argumentos de línea de comandos:
+
+* **Argumento 1**: fichero ``csv`` con los datos de entrada.
+* **Argumento 2**: peso máximo permitido por el camión.
+
+```
+python dynamic_programming.py cows.csv 600
+Producción máxima: 92
+Peso de la combinación: 570
+Listado de vacas que deberíamos comprar: ['Miguelita', 'Flora']
+```
+
+```
+python dynamic_programing.py cows.csv 6000
+Producción máxima: 244
+Peso de la combinación: 1900
+Listado de vacas que deberíamos comprar: ['Fulgencia', 'Miguelita', 'Flora', 'Margarita', 'Bernarda', 'Jacinta']
+```
+
+# Análisis de rendimiento
+
+Navegando al directorio [performance_study](https://gitlab.com/dilasgoi/theegg_ai/-/tree/master/tarea_22/performance_study) puedes echar el ojo a un sencillo análisis de rendimiento de las dos implementaciones.
 
 # Links de interés
 
