@@ -18,6 +18,12 @@ británico la capacidad de localizar a los submarinos alemanes.
 
 Secuencia de pasos o tareas destinadas a llevar a cabo una función específica.
 
+## Análisis exploratorio de datos
+
+Se trata del análisis que se realiza sobre un conjunto de datos para estudiar y conocer las características del conjunto de datos y para conocer la relación que tienen las variables de dicho conjunto entre sí.
+
+Se basa en estadísticos descriptivos que ayuda a identicar cosas como: outliers, missing data, forma de la distribución, etc.
+
 ## API 
 
 La API (**A**pplication **P**rogramming **I**nterface) se trata de una especie de reglas de traducción para poder interactuar con un servicio ya creado; una especie de intermediario de alto nivel. De este modo, haciendo llamadas a la API, podemos interactuar con ese servicio sin tener que saber demasiado de cómo está desarrollado.
@@ -62,6 +68,16 @@ Del mismo modo, también atienden a modelos diferentes: jerarquicas (LDAP), rela
 
 Se trata de un conjunto de instrucciones que se repite hasta que una situación es satisfecha. Pueden ser de tipo ``while`` o de tipo ``for``, por ejemplo.
 
+## Campana de Gauss
+
+También conocida como distribución normal. Se trata de una distribución de probabilidad para variables continuas. Es importante porque permite modelar muchos fenómenos que aparecen en la naturaleza: estatura de la población, cociente intelectual, etc.
+
+Se llama también porque su función de densidad tiene forma de funcion gaussiana. 
+
+## Ciberseguridad
+
+La ciberseguridad comprende los protolcoles protección de los sistemas conectados a Internet o alguna red, el hardware, el software y los datos, frente a las ciberamenazas. Esta práctica es utilizada por particulares y empresas para protegerse contra el acceso no autorizado a los centros de datos y otros sistemas informáticos.
+
 ## Criptografía
 
 La ciencia y el arte de esconder información.
@@ -82,6 +98,10 @@ Cuando queremos cifrar un mensaje, utilizamos la clave pública del destinatario
 
 Un compilador es un programa que traduce código escrito en un lenguage de programación (código fuente) en otro lenguage de programación. El lenguaje objetivo puede ser lenguaje máquina (0s y 1s) o algún lenguaje intermedio.
 
+## Consola
+
+La consola es un terminal. La consola suele ser la interfaz principal para gestionar un ordenador, por ejemplo, mientras se está iniciando. Un terminal es una sesión que puede recibir y enviar entradas y salidas para programas de línea de comandos.
+
 ## Control de versiones
 
 Conjunto de aplicaciones que permiten gestionar cambios en la vida de desarrollo de un elemento de software. También reducen los poblemas a la hora de establecer edición concurrente de un mismo proyecto
@@ -89,6 +109,34 @@ Conjunto de aplicaciones que permiten gestionar cambios en la vida de desarrollo
 ### Github, Gitlab
 
 Son servicios web que permiten almacenar tu proyecto y aplicarle control de versiones de una manera amigable.
+
+## CPU
+
+Del inglés *Central Processing Unit*. Se trata del componente de un sistema informático que controla la interpretación y ejecución de las instrucciones. 
+
+Se compone de:
+
+* Unidad de control (CU)
+
+- Obtiene, descodifica y ejecuta instrucciones.
+- Emite señales de control para controlar el hardware mueve los datos por el sistema.
+
+* Unidad aritmética lógica (ALU)
+
+- Realiza operaciones aritméticas y lógicas (decisiones). En la ALU se realizan los cálculos y se toman las decisiones.
+- Actúa como puerta de enlace entre la memoria primaria y el almacenamiento secundario. Los datos que se transfieren entre ellos pasan por la ALU.
+- La ALU realiza cálculos y toma decisiones lógicas.
+
+* Registros
+
+Los registros son pequeñas cantidades de memoria de alta velocidad contenidas en la CPU. El procesador los utiliza para almacenar pequeñas cantidades de datos que se necesitan durante el procesamiento, como por ejemplo
+
+- La dirección de la siguiente instrucción a ejecutar la instrucción actual que se está decodificando los resultados de los cálculos.
+- Los distintos procesadores tienen diferentes números de registros para diferentes propósitos, pero la mayoría tiene algunos, o todos, de los siguientes: contador de programa, registro de direcciones de memoria (MAR), registro de datos de memoria (MDR), registro de instrucción actual (CIR) y acumulador (ACC).
+
+* Caché
+
+La caché es una pequeña cantidad de memoria de acceso aleatorio (RAM) de alta velocidad construida directamente dentro del procesador. Se utiliza para almacenar temporalmente datos e instrucciones que el procesador puede reutilizar. Esto permite un procesamiento más rápido, ya que el procesador no tiene que esperar a que los datos y las instrucciones se obtengan de la RAM.
 
 ## CSS
 
@@ -105,6 +153,26 @@ Como su nombre indica se trata del procesado/manipulación de datos. Esto puede 
 - Análisis.
 - Resumen.
 - CLasificación.
+
+## Datos estructurados
+
+Los datos estructurados son datos que tienen una forma que puede utilizarse para desarrollar modelos estadísticos o de aprendizaje automático (normalmente una matriz en la que las filas son registros y las columnas son variables o características). O datos que están en una forma que puede ser extraída y convertida en una matriz de este tipo con bastante facilidad (por ejemplo, tablas de bases de datos).
+
+## Datos no estructurados
+
+Los datos no estructurados (o información no estructurada) es información que no tiene un modelo de datos predefinido o que no está organizada de manera predefinida. La información no estructurada suele tener mucho texto, pero también puede contener datos como fechas, números y hechos. Esto da lugar a irregularidades y ambigüedades que dificultan su comprensión mediante los programas tradicionales, en comparación con los datos almacenados en forma de campo en las bases de datos o estrcturas análogas.
+
+Para ser tratados y obtener información sobre ellos se requieren técnicas de minerías de datos u otros métodos que implican machine learning o técnicas avanzadas de estadística.
+
+Ejemplos: señales de audio, imágenes, archivos de texto.
+
+## Dato semi estructurado
+
+Se trata de un tipo de datos a salto de caballo entre el estructurado y el no estructurado.
+
+Los datos semiestructurados son una forma de datos estructurados que no obedecen a la estructura de tabla de los modelos de datos asociados a las bases de datos relacionales u otras formas de tablas de datos, pero que, sin embargo, contienen etiquetas u otros marcadores para separar los elementos semánticos y reforzar las jerarquías de registros y campos dentro de los datos.
+
+Ejemplos: Fichero JSON/XML, binarios (HDF5).
 
 
 ## Diagrama de flujo
@@ -137,6 +205,26 @@ Sólo existen dos que merezcan la pena en el mundo y los demás son innecesarios
 
 ETL es un proceso que extrae/adquiere información de diferentes fuentes, la trata/transforma + valida y finalmente la presenta de modo que pueda ser util.
 
+## Estadística descriptiva
+
+La estadística descriptiva es la rama de la estadística que recolecta, analiza y caracteriza un conjunto de datos con el objetivo de describir lis rasgos generales y comportamientos de este conjunto mediante parámetros básicos (media, moda, mediana, dispersión/desviación), tablas o gráficos.
+
+### Media
+
+Es el valor que tendrían todos los datos si fueran iguales. Es un descriptivo que busca "el centro" (a veces ponderado) de un conjunto de datos. Hay distintas medías: arítmetica con o sin ponderación, geométrica, etc. 
+
+### Moda
+
+Es el valor que con mayor frecuencia absoluta tiene en una distribución de datos. 
+
+## GPU
+
+En su aspecto como máquina de cálculo el uso de una GPU (unidad de procesamiento gráfico) como coprocesador para acelerar las CPUs en la computación científica y de ingeniería de propósito general.
+
+La GPU acelera las aplicaciones que se ejecutan en la CPU descargando algunas de las partes del código que consumen más tiempo y son más complejas. El resto de la aplicación sigue ejecutándose en la CPU. Desde el punto de vista del usuario, la aplicación se ejecuta más rápido porque utiliza la capacidad de procesamiento paralelo masivo de la GPU para aumentar el rendimiento. Esto se conoce como computación "heterogénea" o "híbrida".
+
+Una CPU consta de entre 2 y 28 núcleos, mientras que la GPU está formada por cientos o miles de núcleos más pequeños. Juntos, actúan para procesar los datos de la aplicación. Esta arquitectura masivamente paralela es la que proporciona a la GPU su alto rendimiento de cálculo. Hay una serie de aplicaciones aceleradas por la GPU que proporcionan una forma sencilla de acceder a la alta computación (HPC).
+
 ## FTP
 
 Se trata de un protocolo de red para el intercambio de ficheros entre un cliente y un servidor. Existe una variante segura que utiliza el protocolo SSH y que cifra las comunicaciones denominado sFTP.
@@ -163,6 +251,10 @@ Estrategia de alcance muy específico desarrollada por máquina.
 ### Inteligencia artificial fuerte o general
 
 Inteligencia emergente de una máquina que es elevada al nivel de la humana.
+
+## Interfaz 
+
+Una interfaz se utiliza en informática para nombrar a la conexión funcional entre dos sistemas, programas, dispositivos o componentes de cualquier tipo, que proporciona una comunicación de distintos niveles, permitiendo el intercambio de información.
 
 ## Intérprete
 
@@ -285,9 +377,23 @@ La ley de Moore expresa que aproximadamente cada dos años se duplica el número
 
 Actualmente, debido a las dificultades para crear transistores más pequeños debido a el estancamiento en las tecnologías de miniaturización y a los efectos cuáticos que aparecen a estas escalas, la Ley de Moore no se está cumpliendo.
 
+## Línea de comandos
+
+La línea de comandos es una interfaz de texto para tu ordenador. Es un programa que recibe comandos y los transmite al sistema operativo del ordenador para que los ejecute. 
+
+## Linux
+
+El núcleo de Linux es un núcleo de sistema operativo libre y de código abierto, monolítico, modular y multitarea, similar a Unix. Fue concebido y creado en 1991 por Linus Torvalds para su PC basado en i386, y pronto fue adoptado como el núcleo del sistema operativo GNU, que fue creado como un reemplazo libre de UNIX.
+
+GNU/Linux sería este Kernel sumado a un set de herramientas desarrolladas bajo el amparo de GNU, es decir, herramientas de código abierto. 
+
 ## NoSQL
 
 El nombre de la base de datos NoSQL proviene de Not only SQL. Esto se debe a que este tipo de base de datos suele evitar el uso del SQL. El hecho de evitar el SQL es porque se usa para proyectos en los que se necesita trabajar en la base de datos con un gran volumen. En las bases de datos con lenguaje SQL, los distintos atributos de un elemento, están en diferentes columnas, mientras que en una NoSQL todos los atributos se encuentran en una misma columna, ahorrando espacio y ganando en rendimiento. Algunos ejemplos de lenguajes usados por bases de datos NoSQL son: JSON (JavaScript Object Notation); CQL (Contextual Query Language, anteriormente conocido como Common Query Language); o GQL (Graph Query Language). 
+
+## Pentesting
+
+Se trata de una serie de pruebas de penetración, conocida coloquialmente como pentesting o hacking ético, es un ciberataque simulado autorizado a un sistema informático, realizado para evaluar la seguridad del sistema. La prueba se lleva a cabo para identificar los puntos débiles (vulnerabilidades), incluyendo la posibilidad de que partes no autorizadas accedan a las características y datos del sistema, así como los puntos fuertes, lo que permite completar una evaluación de riesgos.
 
 ## Periféricos
 
@@ -297,6 +403,10 @@ Dispositivos de entrada y salida con los que interacturar con las componentes in
 * Ratón
 * Monitor
 * Impresora
+
+## Phising
+
+Intento fraudulento de obtener información o datos sensibles mediante la suplantación de identidad. Los datos que se buscan suelen ser: nombres de usuario, contraseñas, números de tarjetas de crédito u otros detalles sensibles, haciéndose pasar por una entidad de confianza en una comunicación digital.
 
 ## PHP
 
@@ -340,6 +450,10 @@ Se trata de un lenguaje muy utilizado para Machine Learning ya que ofrece modulo
 
 R es un lenguaje de programación de alto nivel, interpretado, gratuito y abierto además de un entorno de software para el análisis estadístico y gráfico. 
 
+## Ransomware
+
+El ransomware es una forma de malware que cifra los archivos de la víctima. A continuación, el atacante pide un rescate a la víctima para restaurar el acceso a los datos previo pago. A los usuarios se les muestran instrucciones sobre cómo pagar una cuota para obtener la clave de descifrado.
+
 ## Raspberry Pi
 
 Pequeño computador de precio asequible con procesador de arquitectura ARM para pequeños proyectos.
@@ -368,15 +482,29 @@ Se trata de un software para la gestión de los recursos computacionales de un c
 
 Colección de programas y datos que permiten ejecutar instrucciones en un computador.
 
+## Spyware
+A
+El spyware es software que se infiltra en un equipo informático, robando sus datos e información sensible. El spyware está clasificado como un tipo de malware, es decir, un software malicioso diseñado para acceder a su ordenador o dañarlo, a menudo sin su conocimiento.
+
 ## SQL
 
 Se trata de un lenguaje de programación para la gestión de bases de datos relacionales. Es por tanto, un lenguaje de propósito específico.
+
+## Terminal
+
+Es el elemento de acceso a un sistema informático.
+
+Ver "Consola".
 
 ## Transistor
 
 Elemento de circuitería digital que permite el paso de corriente o no en función de un voltaje de entrada. Sería una especie de grifo que deja no pasar el agua eléctrica o corriente.
 
 En los procesadores modernos sirve para construir puertas lógicas que a su vez se utilizan para construir circuitería digital.
+
+## Troyano
+
+Se trata de un tipo de malware disfrazado o escondido dentro de programas o archivos en apariencia legítimos. Una vez instalado en el sistema informático de un usuario, el troyano permite al desarrollador del malware acceder de forma remota al ordenador anfitrión, sometiéndolo a una serie de actividades destructivas o no deseadas.
 
 ## XML
 
