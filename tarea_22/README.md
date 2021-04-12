@@ -83,7 +83,7 @@ Listado de vacas que deberíamos comprar: ['Fulgencia', 'Miguelita', 'Flora', 'M
 
 # Análisis de rendimiento
 
-Navegando al directorio [performance_study](https://gitlab.com/dilasgoi/theegg_ai/-/tree/master/tarea_22/performance_study) puedes echar el ojo a un sencillo análisis de rendimiento de las dos implementaciones.
+Navegando al directorio [performance_study](https://github.com/ethoreum/theegg_ai/tree/master/tarea_22/performance_study) puedes echar el ojo a un sencillo análisis de rendimiento de las dos implementaciones.
 
 # Links de interés
 
